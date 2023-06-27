@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_27_215253) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_27_221529) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -107,7 +107,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_27_215253) do
     t.bigint "artist_id", null: false
     t.string "name"
     t.date "release_date"
-    t.string "type"
+    t.string "release_format"
     t.string "style"
     t.string "bandcamp_link"
     t.string "spotify_link"
