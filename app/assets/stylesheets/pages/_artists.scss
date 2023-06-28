@@ -1,0 +1,39 @@
+#main-artists {
+  text-align: center;
+  h1 {
+    margin: 40px 0px 50px;
+  }
+  .wrapper.artists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 8px;
+    grid-column-gap: 8px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .artist-card-hover {
+      height: 375px;
+      width: 33%;
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      background-color: #4b4b4b58;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        background-color: #ffffff00;
+      }
+    }
+    .artist-card {
+      height: 375px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
