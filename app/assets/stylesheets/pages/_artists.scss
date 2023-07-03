@@ -5,7 +5,7 @@
   }
   .wrapper.artists {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 8px;
     grid-column-gap: 8px;
 
@@ -14,26 +14,43 @@
       color: white;
       font-size: 30px;
       font-weight: bold;
-    }
 
-    .artist-card-hover {
-      height: 375px;
-      width: 33%;
-      background-size: cover;
-      background-position: center;
-      position: absolute;
-      background-color: #4b4b4b58;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      .artist-card {
+        height: 375px;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hover-card {
+        height: 375px;
+        background-color: #4b4b4b58;
+      }
       &:hover {
-        background-color: #ffffff00;
+        .hover-card {
+          background-color: #ffffff00;
+        }
       }
     }
-    .artist-card {
-      height: 375px;
-      background-size: cover;
-      background-position: center;
-    }
+  }
+}
+
+@media(max-width: 1900px) {
+  #main-artists .wrapper.artists {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media(max-width: 1200px) {
+  #main-artists .wrapper.artists {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width: 850px) {
+  #main-artists .wrapper.artists {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 450px) {
+  #main-artists .wrapper.artists {
+    grid-template-columns: 1fr;
   }
 }

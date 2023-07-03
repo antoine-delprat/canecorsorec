@@ -66,6 +66,22 @@ beavs = Artist.create!(
 file = File.open(Rails.root.join("db/seeds/artists/beavs.jpeg"))
 beavs.avatar.attach(io: file, filename: "beavs.jpeg", content_type: "image/jpeg")
 
+dlt = Artist.create!(
+  name: 'DL-T',
+  description: "Lorem ipsum dolor sit amet. Ab obcaecati numquam et asperiores omnis ab voluptatem nihil ad commodi dolor. Eos error rerum et consequatur sequi sed harum magnam est impedit corporis aut explicabo quidem est temporibus tempora. Ut officia sint quo autem quibusdam ex quaerat laboriosam sed delectus quibusdam. Quo consequatur quis et nihil consequatur aut tenetur omnis cum veritatis odit et voluptas doloremque At quod iure a voluptatibus perferendis.",
+  performance: 'DJ Set',
+  city: 'Nantes, France',
+  label_list: 'Cane Corso Records',
+  soundcloud_link: 'https://soundcloud.com/dl-t_music',
+  instagram_link: 'https://www.instagram.com/dlt.dj',
+  facebook_link: 'https://www.facebook.com/dlt.musique/',
+  youtube_link: '',
+  spotify_link: '',
+  video_link: ''
+)
+file = File.open(Rails.root.join("db/seeds/artists/dlt.jpg"))
+dlt.avatar.attach(io: file, filename: "dlt.jpg", content_type: "image/jpg")
+
 various = Artist.create!(
   name: 'Various Artists',
   description: "Lorem ipsum dolor sit amet. Ab obcaecati numquam et asperiores omnis ab voluptatem nihil ad commodi dolor. Eos error rerum et consequatur sequi sed harum magnam est impedit corporis aut explicabo quidem est temporibus tempora. Ut officia sint quo autem quibusdam ex quaerat laboriosam sed delectus quibusdam. Quo consequatur quis et nihil consequatur aut tenetur omnis cum veritatis odit et voluptas doloremque At quod iure a voluptatibus perferendis.",
