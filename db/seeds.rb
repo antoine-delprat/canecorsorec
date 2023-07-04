@@ -29,7 +29,7 @@ anopoli = Artist.create!(
   facebook_link: 'https://www.facebook.com/anopolimusic/',
   youtube_link: 'https://www.youtube.com/channel/UCXiIe_k1ss0D_tMsh6HPaDA',
   spotify_link: 'https://open.spotify.com/artist/6dLif3QtYYxoUlwQEMnpJf?si=FQWifOmoRweIpSo4Zd9u7Q',
-  video_link: 'https://www.youtube.com/watch?v=PvfyX9V0UIc'
+  video_link: 'https://www.youtube.com/embed/PvfyX9V0UIc'
 )
 file = File.open(Rails.root.join("db/seeds/artists/anopoli.jpeg"))
 anopoli.avatar.attach(io: file, filename: "anopoli.jpeg", content_type: "image/jpeg")
@@ -45,7 +45,7 @@ alder = Artist.create!(
   facebook_link: 'https://www.facebook.com/acidalder',
   youtube_link: '',
   spotify_link: 'https://open.spotify.com/artist/6kd75iO1KCGn2xdLYzKwUU?si=561SDegpRgiiabsvPO3ZVg',
-  video_link: 'https://www.youtube.com/watch?v=8mrfkwMoOuw'
+  video_link: 'https://www.youtube.com/embed/8mrfkwMoOuw'
 )
 file = File.open(Rails.root.join("db/seeds/artists/alder.jpeg"))
 alder.avatar.attach(io: file, filename: "alder.jpeg", content_type: "image/jpeg")
@@ -61,7 +61,7 @@ beavs = Artist.create!(
   facebook_link: 'https://www.facebook.com/therealbeavs',
   youtube_link: '',
   spotify_link: 'https://open.spotify.com/artist/3oZQ25sAyrzn9McsFL3BRF?si=aTt0OpVYTm-7XFJhHxNqZg',
-  video_link: 'https://www.youtube.com/watch?v=6FqFcsycyd8'
+  video_link: 'https://www.youtube.com/embed/6FqFcsycyd8'
 )
 file = File.open(Rails.root.join("db/seeds/artists/beavs.jpeg"))
 beavs.avatar.attach(io: file, filename: "beavs.jpeg", content_type: "image/jpeg")

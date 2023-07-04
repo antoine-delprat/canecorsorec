@@ -1,0 +1,42 @@
+#main-artist {
+  margin: 40px;
+  #artist-content {
+    display: flex;
+    .artist-picture {
+      height: 450px;
+      min-width: 400px;
+      max-width: 600px;
+      object-fit: cover;
+    }
+    p {
+      font-weight: 100;
+    }
+    .artist-description {
+      max-width: 700px;
+      margin: 0px 40px;
+      text-align: justify;
+    }
+    .artist-details {
+      min-width: 150px;
+      max-width: 180px;
+      margin-right: 40px;
+      div {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 0px;
+      }
+      .artist-details-title {
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+      .artist-links a {
+        text-decoration: none;
+        color: #ffffff;
+        &:hover {
+          color: #cd16eb;
+        }
+      }
+    }
+  }
+}

@@ -1,2 +1,35 @@
-<div> Hello
+<div id="main-artist">
+  <div id="artist-content">
+    <img class="artist-picture" src="<%= cl_image_path(@artist.avatar.key) %>" alt="<%= @artist.name %>">
+    <div class="artist-description">
+      <h2><%= @artist.name %></h2>
+      <p><%= @artist.description %></p>
+    </div>
+    <div class="artist-details">
+      <div>
+        <p class="artist-details-title">Performances</p>
+        <p><%= @artist.performance %></p>
+      </div>
+      <div>
+        <p class="artist-details-title">Labels</p>
+        <p><%= @artist.label_list %></p>
+      </div>
+      <div>
+        <p class="artist-details-title">Socials</p>
+        <p class="artist-links"><%= link_to "Soundcloud", @artist.soundcloud_link %></p>
+        <p class="artist-links"><%= link_to "Instagram", @artist.instagram_link %></p>
+        <p class="artist-links"><%= link_to "Facebook", @artist.facebook_link %></p>
+        <p class="artist-links"><%= link_to "Spotify", @artist.spotify_link %></p>
+      </div>
+      <div>
+        <p class="artist-details-title">City</p>
+        <p><%= @artist.city %></p>
+      </div>
+    </div>
+    <div class="artist-video">
+      <iframe width="480" height="270" src="https://www.youtube.com/embed/PvfyX9V0UIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div id="artist-booking">
+  </div>
 </div>
