@@ -1,0 +1,24 @@
+<div id="main-releases">
+  <div>
+    <h1>Our releases</h1>
+  </div>
+  <div>
+    <% @releases.each do |release| %>
+      <div class="releases">
+        <div class="releases-block">
+          <%= link_to release_path(release.id) do %>
+            <div class="releases-card" style="background-image: url(<%= cl_image_path(release.photo.key) %>)">
+            </div>
+            <div class="releases-infos">
+              <%=release.name%><br>
+              <%=release.artist.name%>
+            </div>
+          <% end %>
+        </div>
+        <div class="releases-players">
+          <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1523639965&color=%23cd16eb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/canecorsorecords" title="Cane Corso Records" target="_blank" style="color: #cccccc; text-decoration: none;">Cane Corso Records</a> · <a href="https://soundcloud.com/canecorsorecords/sets/premi-re-port-e-v-a-vol-1-cane" title="Première Portée - V.A Vol 1 ⌜Cane Corso Records⌟" target="_blank" style="color: #cccccc; text-decoration: none;">Première Portée - V.A Vol 1 ⌜Cane Corso Records⌟</a></div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

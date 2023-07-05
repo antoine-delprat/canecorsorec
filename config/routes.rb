@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   resources :artists, only: [:index, :show]
+  resources :releases, only: [:index, :show]
 end

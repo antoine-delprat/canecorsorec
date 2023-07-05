@@ -1,0 +1,29 @@
+#main-releases {
+  margin: 40px;
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .releases {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+    .releases-block {
+      margin-right: 50px;
+      .releases-card {
+        height: 400px;
+        width: 400px;
+        background-size: cover;
+        background-position: center;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    .releases-players iframe {
+      width: 500px;
+      height: 300px;
+    }
+  }
+}
