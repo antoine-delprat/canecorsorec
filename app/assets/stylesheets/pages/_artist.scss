@@ -108,5 +108,46 @@
     .artist-picture {
       inline-size: 100%;
     }
+    .artist-description {
+      margin: 30px 0px 40px;
+    }
+    .artist-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: none;
+      margin: 0px auto 40px;
+      div {
+        width: 145px;
+        margin-bottom: 0px;
+      }
+    }
+    .artist-video iframe {
+      width: 480px;
+      height: 270px;
+    }
+  }
+}
+@media(max-width: 560px) {
+  #main-artist #artist-content .artist-video iframe {
+    width: 320px;
+    height: 180px;
+  }
+}
+@media(max-width: 450px) {
+  #main-artist {
+    margin: 40px 30px;
+  }
+}
+@media(max-width: 400px) {
+  #main-artist #artist-content .artist-video iframe {
+    width: 280px;
+    height: 157.5px;
+  }
+}
+@media(max-width: 350px) {
+  #main-artist #artist-content .artist-video iframe {
+    width: 240px;
+    height: 135px;
   }
 }
