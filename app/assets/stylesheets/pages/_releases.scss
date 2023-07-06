@@ -1,8 +1,12 @@
+body:has(#main-releases) {
+  background-color: #cd16eb;
+}
 #main-releases {
   margin: 40px;
   h1 {
     text-align: center;
     margin-bottom: 50px;
+    text-shadow: 0px 0px 10px #00000096;
   }
   .releases {
     display: flex;
@@ -10,20 +14,51 @@
     margin-bottom: 75px;
     .releases-block {
       margin-right: 50px;
+      a {
+        text-decoration: none;
+        color: white;
+      }
       .releases-card {
         height: 400px;
         width: 400px;
         background-size: cover;
         background-position: center;
+        box-shadow: 1px 1px 8px 2px #0000006b;
       }
-      a {
-        text-decoration: none;
-        color: white;
+      .releases-infos {
+        margin-top: 10px;
       }
     }
     .releases-players iframe {
       width: 500px;
       height: 300px;
+      box-shadow: 1px 1px 6px 0px #00000069;
+    }
+    @media(max-width: 991px) {
+      .releases-block {
+        margin-right: 0px;
+      }
+      .releases-players iframe {
+        display: none;
+      }
+    }
+    @media(max-width: 500px) {
+      .releases-block .releases-card {
+        height: 300px;
+        width: 300px;
+      }
+    }
+    @media(max-width: 400px) {
+      .releases-block .releases-card {
+        height: 250px;
+        width: 250px;
+      }
+    }
+    @media(max-width: 330px) {
+      .releases-block .releases-card {
+        height: 200px;
+        width: 200px;
+      }
     }
   }
 }

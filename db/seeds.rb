@@ -108,7 +108,7 @@ premiereportee = Release.create!(
   style: 'Electronic music',
   bandcamp_link: 'https://canecorsorecords.bandcamp.com/album/v-a-vol-1-premiere-portee',
   spotify_link: 'https://open.spotify.com/album/0DBhpT8VXYrv7w5MR844Hq?si=7oxrojaWRziuAj8YVTJhYA',
-  soundcloud_link: 'https://soundcloud.com/canecorsorecords/sets/premi-re-port-e-v-a-vol-1-cane',
+  soundcloud_link: 'https%3A//api.soundcloud.com/playlists/1523639965',
   youtube_link: '',
 )
 file = File.open(Rails.root.join("db/seeds/releases/premiereportee.jpeg"))
@@ -122,7 +122,7 @@ aeons1 = Release.create!(
   style: 'Acid',
   bandcamp_link: 'https://canecorsorecords.bandcamp.com/album/aeons-part-1',
   spotify_link: 'https://open.spotify.com/album/5RlQHAzd9hMtRg0voOePA6?si=QAMzXUCqTL2Xg3nExZjBoA',
-  soundcloud_link: 'https://soundcloud.com/canecorsorecords/sets/alder-aeons-part-1-cane-corso',
+  soundcloud_link: 'https%3A//api.soundcloud.com/playlists/1554681052',
   youtube_link: '',
 )
 file = File.open(Rails.root.join("db/seeds/releases/aeons1.jpeg"))
@@ -136,7 +136,7 @@ aeons2 = Release.create!(
   style: 'Acid',
   bandcamp_link: 'https://canecorsorecords.bandcamp.com/album/aeons-part-2',
   spotify_link: 'https://open.spotify.com/album/0csyu4OvikmnsdXJnEm46p?si=-N05Mr2tSbWSZNcViq3zsw',
-  soundcloud_link: 'https://soundcloud.com/canecorsorecords/sets/alder-aeons-part-2-cane-corso',
+  soundcloud_link: 'https%3A//api.soundcloud.com/playlists/1619572429',
   youtube_link: '',
 )
 file = File.open(Rails.root.join("db/seeds/releases/aeons2.jpeg"))
