@@ -1,0 +1,12 @@
+<div id="main-release">
+  <div>
+    <div class="release-picture" style="background-image: url(<%= cl_image_path(@release.photo.key) %>)"></div>
+    <div>
+      <div><%=@release.name%></div>
+      <div><%=@release.artist.name%></div>
+      <div><%=@release.release_date%></div>
+      <div><%=@release.release_format%></div>
+      <div><%=@release.style%></div>
+    </div>
+  </div>
+</div>
