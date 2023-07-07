@@ -17,16 +17,24 @@ body:has(#main-releases) {
       a {
         text-decoration: none;
         color: white;
-      }
-      .releases-card {
-        height: 400px;
-        width: 400px;
-        background-size: cover;
-        background-position: center;
-        box-shadow: 1px 1px 8px 2px #0000006b;
-      }
-      .releases-infos {
-        margin-top: 10px;
+        .releases-card {
+          height: 400px;
+          width: 400px;
+          background-size: cover;
+          background-position: center;
+          box-shadow: 1px 1px 8px 2px #0000006b;
+        }
+        .releases-infos {
+          margin-top: 10px;
+        }
+        &:hover {
+          .releases-card {
+            box-shadow: 1px 1px 8px 5px #0000006b;
+          }
+          .releases-infos {
+            text-decoration: underline;
+          }
+        }
       }
     }
     .releases-players iframe {
