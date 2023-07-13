@@ -42,31 +42,61 @@ body:has(#main-releases) {
       height: 300px;
       box-shadow: 1px 1px 6px 0px #00000069;
     }
-    @media(max-width: 991px) {
-      .releases-block {
-        margin-right: 0px;
-      }
-      .releases-players iframe {
-        display: none;
-      }
-    }
-    @media(max-width: 500px) {
-      .releases-block .releases-card {
-        height: 300px;
-        width: 300px;
-      }
-    }
-    @media(max-width: 400px) {
-      .releases-block .releases-card {
-        height: 250px;
-        width: 250px;
-      }
-    }
-    @media(max-width: 330px) {
-      .releases-block .releases-card {
-        height: 200px;
-        width: 200px;
-      }
-    }
+  }
+}
+@media(max-width: 1000px) {
+  #main-releases .releases .releases-block a .releases-card {
+    height: 350px;
+    width: 350px;
+  }
+}
+@media(max-width: 960px) {
+  #main-releases .releases .releases-block a .releases-card {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media(max-width: 900px) {
+  #main-releases .releases .releases-block {
+    margin-right: 0px;
+  }
+  #main-releases .releases .releases-players iframe {
+    display: none;
+  }
+  #main-releases .releases .releases-block a .releases-card {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+@media(max-width: 650px) {
+  #main-releases .releases .releases-block a .releases-card {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media(max-width: 550px) {
+  #main-releases .releases .releases-block a .releases-card {
+    height: 350px;
+    width: 350px;
+  }
+}
+@media(max-width: 500px) {
+  #main-releases .releases .releases-block a .releases-card {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media(max-width: 400px) {
+  #main-releases .releases .releases-block a .releases-card {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media(max-width: 330px) {
+  #main-releases .releases .releases-block a .releases-card {
+    height: 200px;
+    width: 200px;
   }
 }
