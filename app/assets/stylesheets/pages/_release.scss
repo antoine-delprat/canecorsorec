@@ -2,16 +2,46 @@
   margin: 60px;
   #release-content {
     display: flex;
+    justify-content: space-evenly;
     .release-picture {
-      height: 430px;
-      width: 430px;
+      height: 500px;
+      width: 500px;
       margin-right: 80px;
       background-size: cover;
       background-position: center;
-      box-shadow: 1px 1px 8px 2px #0000006b;
+      box-shadow: 0px 0px 19px 3px #0000006b;
+    }
+    .release-info {
+      margin-top: 20px;
     }
     .release-player {
       flex-grow: 1;
+      max-width: 950px;
+    }
+  }
+  #release-actions {
+    text-align: center;
+    div {
+      margin-bottom: 40px;
+    }
+    a.release-cta-main {
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+      background-color: #cd16eb;
+      border-radius: 50px;
+      width: 194px;
+      display: inline-block;
+    }
+    a.release-cta-secondary {
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+      background-color: transparent;
+      border-radius: 50px;
+      border: 1px solid white;
+      width: 194px;
+      display: inline-block;
     }
   }
 }
