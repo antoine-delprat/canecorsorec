@@ -3,9 +3,8 @@
     <div>
       <div class="release-picture" style="background-image: url(<%= cl_image_path(@release.photo.key) %>)"></div>
       <div class="release-info">
-        <p><%=@release.name%></p>
-        <p>par <span><%=@release.artist.name%></span></p>
-        <p>sorti le <%=@release.release_date%></p>
+        <p><%=@release.artist.name%> - <%=@release.name%></p>
+        <p><%=@release.release_date%></p>
       </div>
     </div>
     <div class="release-player">
