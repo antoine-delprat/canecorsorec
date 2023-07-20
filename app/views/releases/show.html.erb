@@ -1,4 +1,5 @@
 <div id="main-release">
+  <%= link_to "< retour", releases_path, class: "release-back" %>
   <div id="release-content">
     <div>
       <div class="release-picture" style="background-image: url(<%= cl_image_path(@release.photo.key) %>)"></div>
@@ -12,7 +13,7 @@
     </div>
   </div>
   <div id="release-actions">
-    <div><%= link_to "Acheter sur Bandcamp", @release.bandcamp_link, class: "release-cta-main" %></div>
-    <div><%= link_to "Écouter sur Spotify", @release.spotify_link, class: "release-cta-secondary" %></div>
+    <div><%= link_to "Acheter sur Bandcamp", @release.bandcamp_link, class: "release-cta-main", target: "_blank" %></div>
+    <div><%= link_to "Écouter sur Spotify", @release.spotify_link, class: "release-cta-secondary", target: "_blank" %></div>
   </div>
 </div>
