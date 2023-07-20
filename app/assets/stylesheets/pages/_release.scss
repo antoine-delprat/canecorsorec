@@ -54,3 +54,71 @@
     }
   }
 }
+@media(max-width: 1050px) {
+  #main-release #release-content .release-picture {
+    height: 450px;
+    width: 450px;
+  }
+}
+@media(max-width: 1000px) {
+  #main-release #release-content .release-picture {
+    height: 365px;
+    width: 365px;
+  }
+}
+@media(max-width: 915px) {
+  #main-release #release-content .release-picture {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media(max-width: 850px) {
+  #main-release #release-content {
+    display: block;
+  }
+  #main-release #release-content .release-picture {
+    margin: auto;
+    height: 450px;
+    width: 450px;
+  }
+  #main-release #release-content .release-info {
+    text-align: center;
+  }
+  #main-release #release-content .release-player {
+    margin-top: 40px;
+  }
+}
+@media(max-width: 575px) {
+  #main-release #release-content .release-picture {
+    height: 400px;
+    width: 400px;
+  }
+}
+@media(max-width: 520px) {
+  #main-release #release-content .release-picture {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media(max-width: 425px) {
+  #main-release {
+    margin: 60px 40px;
+  }
+}
+@media(max-width: 380px) {
+  #main-release {
+    margin: 60px 30px;
+  }
+}
+@media(max-width: 360px) {
+  #main-release #release-content .release-picture {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media(max-width: 310px) {
+  #main-release #release-content .release-picture {
+    height: 200px;
+    width: 200px;
+  }
+}
