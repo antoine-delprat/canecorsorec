@@ -1,1 +1,66 @@
-// Specific CSS for your home-page
+#main-home {
+  #home-picture {
+    background-image: image-url("crowd-home.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .home-picture-hover {
+      background-color: #0000004f;
+      flex-grow: 1;
+      height: 100%;
+      display: flex;
+      h1 {
+        margin: auto;
+        font-size: 46px;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+  }
+  #home-content {
+    margin: 40px;
+    .home-next {
+      display: flex;
+      justify-content: space-evenly;
+      h2 {
+        font-weight: bold;
+        margin: 40px 0px 30px;
+      }
+      p {
+        max-width: 485px;
+        margin-bottom: 10px;
+      }
+      .home-event-cta {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 20px;
+        margin-top: 30px;
+        background-color: #cd16eb;
+        border-radius: 50px;
+        border: solid 1px;
+        display: inline-block;
+        transition: 0.15s ease-out;
+        &:hover {
+          box-shadow: 0px 0px 15px 2px #cd16eba6;
+        }
+      }
+      a.home-next-event {
+        background-image: image-url("open-air-angers.jpg");
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 0px 19px 3px #00000047;
+        height: 480px;
+        width: 270px;
+        transition: 0.3s ease-out;
+        &:hover {
+          transform: scale(1.06);
+        }
+      }
+    }
+  }
+}
