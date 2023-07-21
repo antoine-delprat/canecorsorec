@@ -23,6 +23,7 @@ body:has(#main-releases) {
           background-size: cover;
           background-position: center;
           box-shadow: 1px 1px 8px 2px #0000006b;
+          transition: 0.15s ease-out;
         }
         .releases-infos {
           margin-top: 10px;
