@@ -36,10 +36,12 @@
     a.release-cta-main {
       text-decoration: none;
       color: white;
-      padding: 15px;
+      font-weight: bold;
+      padding: 20px;
       background-color: #cd16eb;
       border-radius: 50px;
-      border: solid 1px;
+      border: 1px solid white;
+      width: 207px;
       display: inline-block;
       transition: 0.15s ease-out;
       &:hover {
@@ -49,11 +51,12 @@
     a.release-cta-secondary {
       text-decoration: none;
       color: white;
-      padding: 15px;
+      font-weight: bold;
+      padding: 20px;
       background-color: transparent;
       border-radius: 50px;
       border: 1px solid white;
-      width: 194px;
+      width: 207px;
       display: inline-block;
       transition: 0.15s ease-out;
       &:hover {
