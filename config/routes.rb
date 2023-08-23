@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   resources :artists, only: [:index, :show]
   resources :releases, only: [:index, :show]
+  resources :contacts, only: [:new, :create]
+  get 'contacts/sent'
 end

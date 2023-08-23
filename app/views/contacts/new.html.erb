@@ -1,0 +1,15 @@
+<div>
+  <h1 class="text-4xl text-center">Contacter Cane Corso Records</h1>
+  <%= simple_form_for @contact do |f| %>
+    <% if @contact.errors.any? %>
+      <div id="error_explanation" class="bg-rose-200 pt-3 pb-1 mb-4 px-4 rounded-md">
+        <div class="font-bold text-rose-700 text-sm pb-4">Veuillez remplir tous les champs correctement pour que le message puisse être envoyé.</div>
+      </div>
+    <% end %>
+    <%= f.input :name, label: "Nom et prénom", placeholder: "Bob Sinclar" %>
+    <%= f.input :email, label: "Votre email pour le suivi", placeholder: "bob.sinclar@gmail.com" %>
+    <%= f.input :category, label: "Le motif de votre message", collection: ['Label', 'Booking', 'Autre']%>
+    <%= f.input :message, label: "Votre message", placeholder: "Bonjour, ..." %>
+    <%= f.submit "Envoyer" %>
+  <% end %>
+</div>
