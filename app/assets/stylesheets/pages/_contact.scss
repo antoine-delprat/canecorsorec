@@ -52,3 +52,28 @@
     width: 80%;
   }
 }
+
+#contact-confirmation {
+  margin: 60px auto;
+  text-align: center;
+  h1 {
+    text-shadow: 0px 0px 10px #ffffff66;
+    margin-bottom: 30px;
+  }
+  .back-cta-secondary {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid white;
+    width: 207px;
+    display: inline-block;
+    transition: 0.15s ease-out;
+    &:hover {
+      box-shadow: 0px 0px 15px 2px #ffffff30;
+    }
+  }
+}
