@@ -7,8 +7,8 @@ class Contact < MailForm::Base
   def headers
     {
       to: "antoine.delprat.pro@gmail.com",
-      subject: "Contact CCR",
-      from: "admin@ccr.com",
+      subject: "Formulaire Contact CCR - Sujet #{category}",
+      from: "antoine.delprat.pro@gmail.com",
       reply_to: %("#{name}" <#{email}>)
     }
   end
