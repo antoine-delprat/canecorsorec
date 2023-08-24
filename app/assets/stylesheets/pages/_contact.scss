@@ -11,6 +11,9 @@
     div {
       text-align: left;
     }
+    .invalid-feedback {
+      display: none !important;
+    }
     .cta-send {
       color: white;
       font-weight: bold;
