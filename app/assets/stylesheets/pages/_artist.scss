@@ -1,6 +1,14 @@
 #main-artist {
   margin: 40px;
+  .artist-back {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: #cd16eb;
+    }
+  }
   #artist-content {
+    margin-top: 15px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
     grid-column-gap: 15px;
@@ -130,6 +138,11 @@
   #main-artist #artist-content .artist-picture {
     height: 330px;
     width: 230px;
+  }
+}
+@media(max-width: 850px) {
+  #main-artist .artist-back {
+    display: none;
   }
 }
 @media(max-width: 800px) {

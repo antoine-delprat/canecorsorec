@@ -1,4 +1,5 @@
 <div id="main-artist">
+  <%= link_to "< retour", artists_path, class: "artist-back" %>
   <div id="artist-content">
     <img class="artist-picture" src="<%= cl_image_path(@artist.avatar.key) %>" alt="<%= @artist.name %>">
     <div class="artist-description">
