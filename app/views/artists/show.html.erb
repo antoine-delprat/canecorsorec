@@ -44,6 +44,9 @@
       </div>
     <% end %>
   </div>
-  <div id="artist-booking">
-  </div>
+  <% if @artist.name != 'Alder' %>
+    <div id="artist-booking">
+      <%= link_to "Booker cet artiste", new_contact_path, class: "artist-cta-main" %>
+    </div>
+  <% end %>
 </div>

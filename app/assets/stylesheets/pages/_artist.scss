@@ -41,6 +41,25 @@
       }
     }
   }
+  #artist-booking {
+    margin: 50px auto 0px;
+    text-align: center;
+    .artist-cta-main {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 20px;
+      background-color: #cd16eb;
+      border-radius: 50px;
+      border: 1px solid white;
+      width: 207px;
+      display: inline-block;
+      transition: 0.15s ease-out;
+      &:hover {
+        box-shadow: 0px 0px 15px 2px #cd16eba6;
+      }
+    }
+  }
 }
 @media(max-width: 1600px) {
   #main-artist #artist-content .artist-video iframe {
