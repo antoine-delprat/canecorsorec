@@ -72,6 +72,16 @@
         height: 405px;
       }
     }
+    .artist-podcast {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      iframe {
+        width: 70%;
+      }
+    }
   }
 }
 @media(max-width: 1000px) {
@@ -86,6 +96,13 @@
       iframe {
         width: 480px;
         height: 270px;
+      }
+    }
+    .artist-podcast {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      iframe {
+        width: 98%;
       }
     }
   }

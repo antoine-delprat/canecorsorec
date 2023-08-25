@@ -11,7 +11,6 @@ require "date"
 puts "Cleaning database"
 Event.destroy_all
 Product.destroy_all
-Contact.destroy_all
 Booking.destroy_all
 Release.destroy_all
 Artist.destroy_all
@@ -52,7 +51,7 @@ alder.avatar.attach(io: file, filename: "alder.jpeg", content_type: "image/jpeg"
 
 beavs = Artist.create!(
   name: 'Beavs',
-  description: "Lorem ipsum dolor sit amet. Ab obcaecati numquam et asperiores omnis ab voluptatem nihil ad commodi dolor. Eos error rerum et consequatur sequi sed harum magnam est impedit corporis aut explicabo quidem est temporibus tempora. Ut officia sint quo autem quibusdam ex quaerat laboriosam sed delectus quibusdam. Quo consequatur quis et nihil consequatur aut tenetur omnis cum veritatis odit et voluptas doloremque At quod iure a voluptatibus perferendis.",
+  description: "Depuis plusieurs années, Beavs enchaîne productions et gigs au quatre coins de la France. Fortement influencé par la culture anglaise et toujours à la recherche de la communion avec le dancefloor, ses sets sont un savant mélange de breaks percussifs et de gems hybrid club où la fête prend tout son sens. Ses dernières sorties sur les labels Cane Corso et Tansiut Tone attestent de ses qualités de producteur, avec des tracks aux côtés d'artistes comme Voiron, Adam BFD et DJ Physical.",
   performance: 'DJ Set',
   city: 'Nantes, France',
   label_list: 'Cane Corso Records, Tansiut Tone',
@@ -61,14 +60,14 @@ beavs = Artist.create!(
   facebook_link: 'https://www.facebook.com/therealbeavs',
   youtube_link: '',
   spotify_link: 'https://open.spotify.com/artist/3oZQ25sAyrzn9McsFL3BRF?si=aTt0OpVYTm-7XFJhHxNqZg',
-  video_link: 'https://www.youtube.com/embed/6FqFcsycyd8'
+  video_link: 'https%3A//api.soundcloud.com/tracks/1392106825'
 )
 file = File.open(Rails.root.join("db/seeds/artists/beavs.jpeg"))
 beavs.avatar.attach(io: file, filename: "beavs.jpeg", content_type: "image/jpeg")
 
 dlt = Artist.create!(
   name: 'DL-T',
-  description: "Lorem ipsum dolor sit amet. Ab obcaecati numquam et asperiores omnis ab voluptatem nihil ad commodi dolor. Eos error rerum et consequatur sequi sed harum magnam est impedit corporis aut explicabo quidem est temporibus tempora. Ut officia sint quo autem quibusdam ex quaerat laboriosam sed delectus quibusdam. Quo consequatur quis et nihil consequatur aut tenetur omnis cum veritatis odit et voluptas doloremque At quod iure a voluptatibus perferendis.",
+  description: "DL-T a longtemps squatté les clubs et les warehouses parisiens à la recherche d'énergie et d'inspiration. DJ et co-fondateur du label Cane Corso, le nantais aime jouer une musique explosive et imprévisible. Entre Micro, Breaks et UK Bass, il prend plaisir à emmêler les genres dans des sets vibrants et polyvalents.",
   performance: 'DJ Set',
   city: 'Nantes, France',
   label_list: 'Cane Corso Records',
@@ -77,7 +76,7 @@ dlt = Artist.create!(
   facebook_link: 'https://www.facebook.com/dlt.musique/',
   youtube_link: '',
   spotify_link: '',
-  video_link: ''
+  video_link: 'https%3A//api.soundcloud.com/tracks/1470183301'
 )
 file = File.open(Rails.root.join("db/seeds/artists/dlt.jpg"))
 dlt.avatar.attach(io: file, filename: "dlt.jpg", content_type: "image/jpg")
