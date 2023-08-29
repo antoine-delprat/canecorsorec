@@ -19,7 +19,7 @@ puts "Creating artists..."
 
 anopoli = Artist.create!(
   name: 'Ano Poli',
-  description: "Le projet Ano Poli a démarré il y a quelques années à Chypre. Il est le fruit d’une évolution, d’une continuité évidente pour Paul. Musicien, mélomane, digger et surtout animé d’une passion dévorante pour l’émotion qui se dégage de la musique. Très vite, il se retrouve à mettre en forme sa diversité musicale sans vouloir se contenter d’une case, d’une étiquette. Des bases du disco à la house chaleureuse, de la wave à l’acid, du baile funk à la trap… On peut le voir s’émerveiller dans différents univers pour le compte de plusieurs collectifs: SuperBoom / Big City Life / Krumpp / Block Party Prod. Avec Keep On, il créé Favelas, une résidence Baile Trap qui deviendra très vite un duo de producteurs qui veulent transmettre leur passion du Baile Funk, mêlé à des sonorités heavy trap.",
+  description: "Ano Poli est un DJ, producteur et activiste de longue date. Il fusionne hard breaks, jersey, electro, jungle, Hardcore, Hyperpop... un mélange intense qu'il aime appeler 'Hybrid Club'. Aujourd’hui à la tête de ses différents projets, Cane Corso Records et Rayquaza, Ano Poli va encore plus loin dans ses explorations. Il y rassemble l'avant garde de cette nouvelle scène au carrefour des musiques électroniques. Sur scène, Ano Poli s’affranchit de toutes barrières musicales. C'est sans complexe ou mépris de classe qu'il mène son public à travers ses références vastes, nichées ou non. Les étiquettes disparaissent, seule reste la danse.",
   performance: 'DJ Set',
   city: 'Nantes, France',
   label_list: 'Cane Corso Records, Multi-Pass Records, Welter Records',
@@ -28,7 +28,7 @@ anopoli = Artist.create!(
   facebook_link: 'https://www.facebook.com/anopolimusic/',
   youtube_link: 'https://www.youtube.com/channel/UCXiIe_k1ss0D_tMsh6HPaDA',
   spotify_link: 'https://open.spotify.com/artist/6dLif3QtYYxoUlwQEMnpJf?si=FQWifOmoRweIpSo4Zd9u7Q',
-  video_link: 'https://www.youtube.com/embed/PvfyX9V0UIc'
+  video_link: 'https%3A//api.soundcloud.com/tracks/1379409436'
 )
 file = File.open(Rails.root.join("db/seeds/artists/anopoli.jpeg"))
 anopoli.avatar.attach(io: file, filename: "anopoli.jpeg", content_type: "image/jpeg")
