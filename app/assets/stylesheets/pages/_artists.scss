@@ -5,11 +5,11 @@
     text-shadow: 0px 0px 10px #ffffff66;
   }
   .wrapper.artists {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 8px;
-    grid-column-gap: 8px;
-    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    grid-row-gap: 10px;
+    grid-column-gap: 60px;
+    margin-bottom: 10px;
     a {
       text-decoration: none;
       color: white;
@@ -17,13 +17,14 @@
       font-weight: bold;
 
       .artist-card {
-        height: 375px;
+        height: 500px;
+        width: 450px;
         background-size: cover;
         background-position: center;
       }
 
       .hover-card {
-        height: 375px;
+        height: 500px;
         background-color: #0000004f;
         transition: 0.2s ease-out;
       }
@@ -35,24 +36,70 @@
     }
   }
 }
-
-@media(max-width: 1900px) {
-  #main-artists .wrapper.artists {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+@media(max-width: 1000px) {
+  #main-artists .wrapper.artists a .artist-card {
+    height: 400px;
+    width: 350px;
+  }
+  #main-artists .wrapper.artists a .hover-card {
+    height: 400px;
   }
 }
-@media(max-width: 1200px) {
+@media(max-width: 900px) {
   #main-artists .wrapper.artists {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
   }
 }
-@media(max-width: 850px) {
+@media(max-width: 800px) {
   #main-artists .wrapper.artists {
-    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
   }
 }
-@media(max-width: 450px) {
+@media(max-width: 750px) {
   #main-artists .wrapper.artists {
-    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    grid-column-gap: 0px;
+  }
+  #main-artists .wrapper.artists a .artist-card {
+    height: 350px;
+    width: 300px;
+  }
+  #main-artists .wrapper.artists a .hover-card {
+    height: 350px;
+  }
+}
+@media(max-width: 640px) {
+  #main-artists .wrapper.artists {
+    flex-direction: column;
+    align-items: center;
+    grid-row-gap: 25px;
+  }
+  #main-artists .wrapper.artists a .artist-card {
+    height: 500px;
+    width: 450px;
+  }
+  #main-artists .wrapper.artists a .hover-card {
+    height: 500px;
+  }
+}
+@media(max-width: 475px) {
+  #main-artists .wrapper.artists {
+    grid-row-gap: 10px;
+  }
+  #main-artists .wrapper.artists a .artist-card {
+    height: 400px;
+    width: 350px;
+  }
+  #main-artists .wrapper.artists a .hover-card {
+    height: 400px;
+  }
+}
+@media(max-width: 360px) {
+  #main-artists .wrapper.artists a .artist-card {
+    height: 350px;
+    width: 300px;
+  }
+  #main-artists .wrapper.artists a .hover-card {
+    height: 350px;
   }
 }
