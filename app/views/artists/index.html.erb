@@ -3,7 +3,8 @@
     <h1>Artistes</h1>
   </div>
   <div class="wrapper artists">
-      <% @artists.each do |artist| %>
+      <% array_sorted = @artists.sort_by { |x| x.name.downcase } %>
+      <% array_sorted.each do |artist| %>
         <% if artist.name != 'Various Artists' && artist.name != 'DL-T' && artist.name != 'Alder' %>
           <%= link_to artist_path(artist.id) do %>
             <div class="artist-card d-flex justify-content-center align-items-center" style="background-image: url(<%= cl_image_path(artist.avatar.key) %>)">
