@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@release.artist.name} - #{@release.name}" %>
+<% content_for :meta_description, "#{@release.artist.name} - #{@release.name} sorti sur le label Cane Corso Records" %>
+<% content_for :meta_image, cl_image_path(@release.photo.key) if @release.photo.attached? %>
+
 <div id="main-release">
   <%= link_to "< retour", releases_path, class: "release-back" %>
   <div id="release-content">

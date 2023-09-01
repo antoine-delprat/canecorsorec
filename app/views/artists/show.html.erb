@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@artist.name} du label Cane Corso Records" %>
+<% content_for :meta_description, @artist.description %>
+<% content_for :meta_image, cl_image_path(@artist.avatar.key) if @artist.avatar.attached? %>
+
 <div id="main-artist">
   <%= link_to "< retour", artists_path, class: "artist-back" %>
   <div id="artist-content">
